@@ -1,0 +1,355 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Bootstrap CSS</title>
+        <meta name="description" content="Universidad Panamericana AWS LAMP example">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#scrollspy">
+
+      <nav id="scrollspy" class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#Carousel">Carousel</a></li>
+              <li><a href="#Jumbotron">Jumbotron</a></li>
+              <li><a href="#MainContainer">MainContainer <span class="badge">42</span></a></li>
+              <li><a href="#Tabs">Tabs</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--
+        1. Carousel
+      -->
+      <div id="Carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#Carousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="carousel-caption">
+              <h1>Example Slide 1 with Tooltips</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident tempore nostrum necessitatibus magni quos expedita autem, tempora aperiam alias.
+              </p>
+              <p>
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <h1>Example Slide 2 with Popovers</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad provident tempore nostrum necessitatibus magni quos expedita autem, tempora aperiam alias.
+              </p>
+              <p>
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="focus"  data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on left
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="focus"  data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on top
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="focus"  data-placement="bottom" data-content="Vivamus
+                sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on bottom
+                </button>
+
+                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-trigger="focus"  data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                  Popover on right
+                </button>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div id="Jumbotron" class="jumbotron">
+        <div class="container">
+          <h1><span class="label label-default">New</span> Hello, world!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cupiditate excepturi maxime! Nam voluptate, expedita ab alias, aut facilis id repellat vel placeat quae dignissimos consequuntur non! Dolorum, recusandae quis.</p>
+            <div class="alert alert-info" role="alert">
+              <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+            </div>
+            <!--
+              2. Modal
+            -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="control-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="control-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="MainContainer" class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>This First Heading
+              <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nostrum iusto minus, similique. Non qui ipsa quae deleniti illo! Culpa, at facere iusto quia inventore nisi, doloribus dolores praesentium natus.</p>
+
+          </div>
+          <div class="col-md-4">
+            <img class="img-circle img-responsive" src="http://placehold.it/300x300">
+          </div>
+
+          <hr class="col-md-12 featurette-divider">
+          <div class="col-md-4">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M01rsp80LCk?list=PLwlY699Z9ioV_EkKRPx1GzI4RgNH4w2OP" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h2>The Second Heading <small>Is Pretty Cool Too.</small></h2>
+            <dl class="dl-horizontal text-center">
+              <dt>Lorem ipsum.</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
+              <dt>Lorem ipsum.</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
+              <dt>Lorem ipsum.</dt>
+              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
+            </dl>
+          </div>
+
+          <hr class="col-md-12 featurette-divider">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4">
+                <blockquote>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <blockquote class="blockquote-reverse">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <address>
+              <strong>Twitter, Inc.</strong><br>
+              795 Folsom Ave, Suite 600<br>
+              San Francisco, CA 94107<br>
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+
+            <address>
+              <strong>Full Name</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </address>
+          </div>
+
+          <hr class="col-md-12 featurette-divider">
+          <div class="col-md-6">
+            <table class="table table-hover table-responsive">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+          <div class="col-md-6">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <hr class="col-md-12 featurette-divider">
+        </div>
+      </div>
+      <!-- /.container -->
+
+      <!--
+        4. Tab
+      -->
+      <div id="Tabs" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+              <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+              <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+              <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="home">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis aut ex harum excepturi eligendi eos porro quam quasi, autem ipsa deserunt perferendis dolor atque quo, laudantium, nam sunt necessitatibus incidunt.
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="profile">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero corporis asperiores sequi, quo hic sint cumque vero, beatae blanditiis voluptatem saepe quasi totam ipsum, veritatis voluptatibus magni officiis! Repudiandae, libero.
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="messages">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi recusandae quo praesentium doloribus tempore architecto, repudiandae! Quis, magnam amet, odio est exercitationem similique cum voluptas maiores iusto. Sed, officiis, esse.
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="settings">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vel accusantium hic, adipisci, assumenda a maxime ad perspiciatis iure impedit necessitatibus amet soluta voluptates dicta illo reiciendis atque non at.
+              </div>
+            </div>
+
+          </div>
+          <hr class="col-md-12 featurette-divider">
+        </div>
+      </div>
+      </div>
+
+
+      <footer class="container">
+        <div>
+          <p>Copyright &copy; Your Website 2015</p>
+        </div>
+      </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>
